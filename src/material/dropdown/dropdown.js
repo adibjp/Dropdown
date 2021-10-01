@@ -89,7 +89,7 @@ const DropDown = ({ options, groupName }) => {
 
   return (
     <div className={`dropdown-wrapper`}>
-      <div className={`dropdown`} onClick={handleIndicatorClick}>
+      <div className={`dropdown ${isDropdownOpen ? 'dropdown-active': ''}`} onClick={handleIndicatorClick}>
         <div className={`dropdown-label-wrapper`}>
           <i className="fas fa-link" />
           <div>
@@ -107,7 +107,7 @@ const DropDown = ({ options, groupName }) => {
               <input
                 type="text"
                 autoFocus
-                placeholder="Search Site"
+                placeholder={`Search ${groupName}`}
                 ref={inputRef}
                 defaultValue={filterText}
                 onChange={handleFilterTextChange} />
