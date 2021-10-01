@@ -15,7 +15,12 @@ const options = [
   { "value": "www.ab2c24.com", "name": "www.ab2c24.com" },
   { "value": "www.mango.com", "name": "www.mango.com" },
   { "value": "www.orange.com", "name": "www.orange.com" },
-  { "value": "orange", "name": "orange" }
+  { "value": "orange", "name": "orange" },
+  { "value": "orange1", "name": "orange1" },
+  { "value": "orange2", "name": "orange2" },
+  { "value": "orange3", "name": "orange3" },
+  { "value": "green", "name": "green" },
+  { "value": "yellow", "name": "yellow" },
 ]
 const App = (props) => {
   return (
