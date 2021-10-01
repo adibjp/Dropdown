@@ -1,0 +1,20 @@
+/* ----- IMPORTS ----- */
+/* import icons and font used in the design */
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap");
+
+
+
+/* ----- GLOBAL ELEMENTS ----- */
+/* reset all elements with no margin or padding */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Work Sans', Verdana, Arial, sans-serif; /* using google font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

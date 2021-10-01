@@ -1,0 +1,44 @@
+++++++++++ Coding Challenge ++++++++++
+
+
+Thanks for working on this coding challenge.
+We appreciate you taking the time to showcase your skills.
+
+Please download the React app from this GIT repo.
+We've setup a basic framework for you to work within.
+Please follow the instructions below and send a GITHUB link or a zip of your project files when completed.
+
+Estimated Time: 2-4h
+
+
+__________ UI Design __________
+	- Please replicate the UI shown here in these Design Files (https://share.goabstract.com/81867b88-8702-4cf1-af95-956b2fc66234).
+	- There are two comps. One shows the overarching layout of the dropdown. The other shows the different states of the dropdown based on interactions.
+	- We have already implemented the fontawesome icon library and Google Font into the application for you. All you need to do is use them correctly to match the design.
+	- Please custom code the layout shown (no libraries like Material-UI).
+
+
+__________ Data __________
+	- Create a JSON data structure that represents the websites shown in the design of the dropdown.
+	- Fetch this data and store it in application state (redux).
+	- Show this data properly in the UI.
+
+
+__________ Functionality __________
+	- When an item is selected, we should add/remove item from the reducer.
+	- When filter button is clicked, we should console.log all the items that we have stored in redux.
+	- "All Sites" label should change to read how many sites have been selected. (ex: 3 sites selected).
+	- User should be able to scroll vertically the list of dropdown items (if you need to make the box shorter or add more data to showcase this, please do)
+
+
+__________ Nice to haves (not required) __________
+	You do NOT need to do this part of the challenge!!!
+	- User should be able to filter, via search, the dropdown items.
+	- User should be able to select and deselect all checkboxes.
+
+
+__________ Tips __________
+	- Code readability/abstraction and UI/UX count heavily!
+
+
+
