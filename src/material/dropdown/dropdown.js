@@ -1,6 +1,6 @@
 /* ++++++++++ --------------- IMPORTS --------------- ++++++++++ */
 // libraries
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 // redux
 import { useSelector, useDispatch } from 'react-redux';
 import { applyFilter, selectors, setFilterText, setOptions, toggleAllOptionsSelect, toggleDropdown, toggleSelectedItem } from '../../state/slices/dropdown';
@@ -42,7 +42,7 @@ const DropdownRow = ({ name, value }) => {
 
 /* ========== ~~~~~~~~~~ DROPDOWN ~~~~~~~~~~ ========== */
 const DropDown = ({ options, groupName }) => {
-
+  const inputRef = useRef();
   const dispatch = useDispatch();
   const dropdownActive = useSelector(state => state.dropdown.dropdownActive);
   const filteredOptions = useSelector(state => selectors.filteredOptions(state));
@@ -91,7 +91,7 @@ const DropDown = ({ options, groupName }) => {
     <div className={`dropdown-wrapper`}>
       <div className={`dropdown`} onClick={handleIndicatorClick}>
         <div className={`dropdown-label-wrapper`}>
-          <i className="fas fa-caret-down" />
+          <i className="fas fa-link" />
           <div>
             <span className={`label`}>{groupName}</span>
             <span className={`value`} >{label}</span>
@@ -106,7 +106,9 @@ const DropDown = ({ options, groupName }) => {
               <i className="fas fa-search" />
               <input
                 type="text"
+                autoFocus
                 placeholder="Search Site"
+                ref={inputRef}
                 defaultValue={filterText}
                 onChange={handleFilterTextChange} />
             </div>

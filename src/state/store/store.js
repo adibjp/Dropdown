@@ -3,7 +3,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { enableBatching } from 'redux-batched-actions';
 // slices of state
-import dropdownSlice, {selectors as dropdownSelectors} from '../slices/dropdown';
+import dropdownSlice from '../slices/dropdown';
 
 
 // /* ========== ~~~~~~~~~~ STORE (application state) ~~~~~~~~~~ ========== */

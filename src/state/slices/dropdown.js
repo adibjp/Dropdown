@@ -62,7 +62,6 @@ export const dropdownSlice = createSlice({
 export const { toggleDropdown, setOptions, toggleSelectedItem, toggleAllOptionsSelect, setFilterText, applyFilter } = dropdownSlice.actions;
 export default dropdownSlice.reducer;
 export const selectors = {};
-const emptyObj = {};
 
 selectors.filterText = (state)=> {
   return state?.dropdown?.filtertext || ""
