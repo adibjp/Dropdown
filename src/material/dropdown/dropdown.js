@@ -94,7 +94,7 @@ const DropDown = ({ options, groupName }) => {
           <i className="fas fa-link" />
           <div>
             <span className={`label`}>{groupName}</span>
-            <span className={`value`} >{label}</span>
+            <span className={`value ${selectedItems?.length ? `label-selected` : ''}`} >{label}</span>
           </div>
         </div>
         <i className="fas fa-caret-down"></i>
